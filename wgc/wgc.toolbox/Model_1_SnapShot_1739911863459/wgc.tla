@@ -21,8 +21,7 @@ mvlr ==
 mvrl ==
     /\ F \in A \ left
     /\ \E a \in A \ left : left' = left \cup {F, a}
-
-\* STATE TRANSITION
+    
 l0(s) == (*Set s child of A licit on a bank: no conflict*)
     ( { W, G } \subseteq s \/ { G, C } \subseteq s ) => F \in s
 
@@ -32,17 +31,7 @@ l(s) == (*Set s licit assignment for left: no conflict on either bank*)
 Next == 
     /\ mvlr \/ mvrl
     /\ l(left')
-    
-\* INVARIANTS
-Target ==
-    left = {}
-
-Verif == 
-    /\ left \subseteq A
-    /\ l(left) (*every state is licit*)
-    /\ ~ Target
-    
 =============================================================================
 \* Modification History
-\* Last modified Wed Feb 19 15:29:37 CET 2025 by Phan Trần Thiên Ân
+\* Last modified Tue Feb 18 21:50:34 CET 2025 by Phan Trần Thiên Ân
 \* Created Fri Feb 14 13:44:51 CET 2025 by Phan Tr?n Thiên Ân
