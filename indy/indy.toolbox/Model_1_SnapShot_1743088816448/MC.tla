@@ -1,6 +1,6 @@
 ---- MODULE MC ----
-EXTENDS wgc, TLC
+EXTENDS indy, TLC
 
 =============================================================================
 \* Modification History
-\* Created Mon Mar 03 13:59:03 CET 2025 by Phan Tr?n Thiên Ân
+\* Created Thu Mar 27 16:20:14 CET 2025 by Phan Tr?n Thiên Ân

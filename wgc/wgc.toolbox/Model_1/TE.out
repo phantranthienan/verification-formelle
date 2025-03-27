@@ -2,7 +2,7 @@
 TLC2 Version 2.16 of 31 December 2020 (rev: cdddf55)
 @!@!@ENDMSG 2262 @!@!@
 @!@!@STARTMSG 2187:0 @!@!@
-Running breadth-first search Model-Checking with fp 76 and seed 5924163369102838609 with 1 worker on 16 cores with 3509MB heap and 64MB offheap memory [pid: 20672] (Windows 10 10.0 amd64, AdoptOpenJDK 14.0.1 x86_64, MSBDiskFPSet, DiskStateQueue).
+Running breadth-first search Model-Checking with fp 99 and seed 4341771133641594352 with 1 worker on 16 cores with 3509MB heap and 64MB offheap memory [pid: 8828] (Windows 10 10.0 amd64, AdoptOpenJDK 14.0.1 x86_64, MSBDiskFPSet, DiskStateQueue).
 @!@!@ENDMSG 2187 @!@!@
 @!@!@STARTMSG 2220:0 @!@!@
 Starting SANY...
@@ -25,13 +25,13 @@ Semantic processing of module TE
 SANY finished.
 @!@!@ENDMSG 2219 @!@!@
 @!@!@STARTMSG 2185:0 @!@!@
-Starting... (2025-02-19 15:00:20)
+Starting... (2025-03-03 13:59:15)
 @!@!@ENDMSG 2185 @!@!@
 @!@!@STARTMSG 2189:0 @!@!@
 Computing initial states...
 @!@!@ENDMSG 2189 @!@!@
 @!@!@STARTMSG 2190:0 @!@!@
-Finished computing initial states: 1 distinct state generated at 2025-02-19 15:00:20.
+Finished computing initial states: 1 distinct state generated at 2025-03-03 13:59:16.
 @!@!@ENDMSG 2190 @!@!@
 @!@!@STARTMSG 2114:1 @!@!@
 Deadlock reached.
@@ -88,7 +88,7 @@ The behavior up to this point is:
 
 @!@!@ENDMSG 2217 @!@!@
 @!@!@STARTMSG 2200:0 @!@!@
-Progress(8) at 2025-02-19 15:00:20: 8 states generated (923 s/min), 8 distinct states found (923 ds/min), 0 states left on queue.
+Progress(8) at 2025-03-03 13:59:16: 8 states generated (599 s/min), 8 distinct states found (599 ds/min), 0 states left on queue.
 @!@!@ENDMSG 2200 @!@!@
 @!@!@STARTMSG 2199:0 @!@!@
 8 states generated, 8 distinct states found, 0 states left on queue.
@@ -100,5 +100,5 @@ The depth of the complete state graph search is 8.
 The average outdegree of the complete state graph is 1 (minimum is 0, the maximum 1 and the 95th percentile is 1).
 @!@!@ENDMSG 2268 @!@!@
 @!@!@STARTMSG 2186:0 @!@!@
-Finished in 526ms at (2025-02-19 15:00:20)
+Finished in 812ms at (2025-03-03 13:59:16)
 @!@!@ENDMSG 2186 @!@!@
