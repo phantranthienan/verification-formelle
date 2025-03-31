@@ -30,8 +30,23 @@ Init == l = <<A, {}, {}>>
 Licit(S) ==
     /\ \A G \in Unsafe: G \subseteq S => F \in S
     
+\*Move(i, j, a) == 
+\*    /\ i \in Locs
+\*    /\ j \in Locs
+\*    /\ i /= j
+\*    /\ a \in l[i]
+\*    /\ F \in l[i]
+\*    /\ l' = [l EXCEPT
+\*                ![i] = @ \ {F, a},
+\*                ![j] = @ \union {F, a} ]
+\*    /\ Type
+\*    /\ \A k \in Locs: Licit(l'[k])
+
 Next == 
-    /\ \E i, j \in Locs : \E a \in l[i] : 
+    /\ \E i, j \in Locs : \E a \in l[i] : /\ i \in Locs
+                                        /\ j \in Locs
+                                        /\ i /= j
+                                        /\ a \in l[i]
                                         /\ F \in l[i]
                                         /\ l' = [l EXCEPT
                                                     ![i] = @ \ {F, a},
@@ -45,9 +60,8 @@ Target == l = <<{}, {}, A>>
 Inv == 
     /\ Type
     /\ \A i \in Locs : Licit(l[i])
-    /\ ~Target
 
 =============================================================================
 \* Modification History
-\* Last modified Mon Mar 31 20:51:40 CEST 2025 by Phan Trần Thiên Ân
+\* Last modified Mon Mar 31 20:47:06 CEST 2025 by Phan Trần Thiên Ân
 \* Created Mon Mar 31 14:32:25 CEST 2025 by Phan Tr?n Thiên Ân
